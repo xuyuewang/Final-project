@@ -1,4 +1,6 @@
-Step1@xuyuewan@usc.edu
+Step1
+
+@xuyuewan@usc.edu
 
 a. Combine training data and testing data in terms of proteomics and RNAseq respectively.
 b. Delete parameters which including NA values in the dataset and convert the format of rows and columns.
