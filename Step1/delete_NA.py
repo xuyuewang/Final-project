@@ -8,7 +8,7 @@ import csv
 import os
 import pandas as pd
 
-data_dir = "/home/amber/Documents/542/Step1/"
+data_dir = "/home/amber/Documents/542/data/"
 
 tsv_file = data_dir + "total_pro.tsv"
 csv_file = data_dir + "total_pro.csv"

@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 
 dataMat = []
-fr = open("/home/amber/Documents/Final-project/Step2/a_pca_pro.txt")
+fr = open("/home/amber/Documents/Final-project/data/a_pca_matrix_v2.txt")
 for line in fr.readlines():
     curLine = line.strip().split('\t')
     fltLine = map(float,curLine)

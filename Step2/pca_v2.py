@@ -9,14 +9,15 @@ import os
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 
-data_dir = "/home/amber/Documents/Final-project/Step2/"
+data_dir = "/home/amber/Documents/Final-project/data/"
 
-csv_infile = data_dir + "a_total_pro.csv"
+csv_infile = data_dir + "a_pro_matrix.csv"
 txt_outfile = data_dir + "a_pca_pro.txt"
 
 df = pd.read_csv(csv_infile, sep=",")
 
-# df.pop('RNAseq')
+df.pop('sample')
+# sample_id = df.pop('RNAseq').values
 sample_id = df.pop('Proteomics').values
 x_data = df.values
 

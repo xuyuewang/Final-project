@@ -9,7 +9,7 @@ import os
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 
-data_dir = "/home/amber/Documents/Final-project/Step2/"
+data_dir = "/home/amber/Documents/Final-project/data/"
 
 csv_infile = data_dir + "a_total_matrix.csv"
 txt_outfile = data_dir + "a_pca_matrix.txt"

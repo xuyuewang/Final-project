@@ -3,7 +3,7 @@
 import csv
 import pandas as pd
 
-data_dir = "/home/amber/Documents/Final-project/Step1/"
+data_dir = "/home/amber/Documents/Final-project/data/"
 
 csv_file = data_dir + "a_total_rna.csv"
 

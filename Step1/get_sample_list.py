@@ -9,7 +9,7 @@ import pandas as pd
 import csv
 import os
 
-data_dir = "/home/amber/Documents/Final-project/Step1/"
+data_dir = "/home/amber/Documents/Final-project/data/"
 
 csv_infile = data_dir + "sum_tab_2.csv"
 txt_file = data_dir + "txt_sum.txt"

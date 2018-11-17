@@ -116,7 +116,7 @@ def biKMeans(dataMat, k, distMeas=distEclud):
 
 def testBasicFunc():
     # 加载测试数据集
-    dataMat = mat(loadDataSet("/home/amber/Documents/Final-project/Step2/a_pca_pro.txt"))
+    dataMat = mat(loadDataSet("/home/amber/Documents/Final-project/data/a_pca_pro.txt"))
 
     # 测试 randCent() 函数是否正常运行。
     # 首先，先看一下矩阵中的最大值与最小值
@@ -134,12 +134,12 @@ def testBasicFunc():
 
 def testKMeans():
     # 加载测试数据集
-    dataMat = mat(loadDataSet("/home/amber/Documents/Final-project/Step2/a_pca_pro.txt"))
+    dataMat = mat(loadDataSet("/home/amber/Documents/Final-project/data/a_pca_matrix_v2.txt"))
 
     # 该算法会创建k个质心，然后将每个点分配到最近的质心，再重新计算质心。
     # 这个过程重复数次，知道数据点的簇分配结果不再改变位置。
     # 运行结果（多次运行结果可能会不一样，可以试试，原因为随机质心的影响，但总的结果是对的， 因为数据足够相似）
-    myCentroids, clustAssing = kMeans(dataMat, 4)
+    myCentroids, clustAssing = kMeans(dataMat, 2)
 
     print('centroids=', myCentroids)
 
@@ -148,7 +148,7 @@ def testKMeans():
 
 def testBiKMeans():
     # 加载测试数据集
-    dataMat = mat(loadDataSet("/home/amber/Documents/Final-project/Step2/a_pca_pro.txt"))
+    dataMat = mat(loadDataSet("/home/amber/Documents/Final-project/data/a_pca_pro.txt"))
 
     centList, myNewAssments = biKMeans(dataMat, 3)
 
